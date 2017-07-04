@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="resources/css/|resources/fonts/|resources/img/|resources/js/|resources/js/gridster/|resources/js/tinymce/|resources/js/tinymce/langs/|resources/js/tinymce/plugins/advhr/|resources/js/tinymce/plugins/advhr/css/|resources/js/tinymce/plugins/advhr/js/|resources/js/tinymce/plugins/advhr/langs/|resources/js/tinymce/plugins/advimage/|resources/js/tinymce/plugins/advimage/css/|resources/js/tinymce/plugins/advimage/img/|resources/js/tinymce/plugins/advimage/js/|resources/js/tinymce/plugins/advimage/langs/|resources/js/tinymce/plugins/advlink/|resources/js/tinymce/plugins/advlink/css/|resources/js/tinymce/plugins/advlink/js/|resources/js/tinymce/plugins/advlink/langs/|resources/js/tinymce/plugins/advlist/|resources/js/tinymce/plugins/autolink/|resources/js/tinymce/plugins/autoresize/|resources/js/tinymce/plugins/autosave/|resources/js/tinymce/plugins/autosave/langs/|resources/js/tinymce/plugins/bbcode/|resources/js/tinymce/plugins/contextmenu/|resources/js/tinymce/plugins/directionality/|resources/js/tinymce/plugins/emotions/|resources/js/tinymce/plugins/emotions/img/|resources/js/tinymce/plugins/emotions/js/|resources/js/tinymce/plugins/emotions/langs/|resources/js/tinymce/plugins/example/|resources/js/tinymce/plugins/example_dependency/|resources/js/tinymce/plugins/example/img/|resources/js/tinymce/plugins/example/js/|resources/js/tinymce/plugins/example/langs/|resources/js/tinymce/plugins/fullpage/|resources/js/tinymce/plugins/fullpage/css/|resources/js/tinymce/plugins/fullpage/js/|resources/js/tinymce/plugins/fullpage/langs/|resources/js/tinymce/plugins/fullscreen/|resources/js/tinymce/plugins/iespell/|resources/js/tinymce/plugins/inlinepopups/|resources/js/tinymce/plugins/inlinepopups/skins/clearlooks2/|resources/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/|resources/js/tinymce/plugins/inlinepopups/skins/themepixels/|resources/js/tinymce/plugins/inlinepopups/skins/themepixels/img/|resources/js/tinymce/plugins/insertdatetime/|resources/js/tinymce/plugins/layer/|resources/js/tinymce/plugins/legacyoutput/|resources/js/tinymce/plugins/lists/|resources/js/tinymce/plugins/media/|resources/js/tinymce/plugins/media/css/|resources/js/tinymce/plugins/media/js/|resources/js/tinymce/plugins/media/langs/|resources/js/tinymce/plugins/nonbreaking/|resources/js/tinymce/plugins/noneditable/|resources/js/tinymce/plugins/pagebreak/|resources/js/tinymce/plugins/paste/|resources/js/tinymce/plugins/paste/js/|resources/js/tinymce/plugins/paste/langs/|resources/js/tinymce/plugins/preview/|resources/js/tinymce/plugins/preview/jscripts/|resources/js/tinymce/plugins/print/|resources/js/tinymce/plugins/save/|resources/js/tinymce/plugins/searchreplace/|resources/js/tinymce/plugins/searchreplace/css/|resources/js/tinymce/plugins/searchreplace/js/|resources/js/tinymce/plugins/searchreplace/langs/|resources/js/tinymce/plugins/spellchecker/|resources/js/tinymce/plugins/spellchecker/css/|resources/js/tinymce/plugins/spellchecker/img/|resources/js/tinymce/plugins/style/|resources/js/tinymce/plugins/style/css/|resources/js/tinymce/plugins/style/js/|resources/js/tinymce/plugins/style/langs/|resources/js/tinymce/plugins/tabfocus/|resources/js/tinymce/plugins/table/|resources/js/tinymce/plugins/table/css/|resources/js/tinymce/plugins/table/js/|resources/js/tinymce/plugins/table/langs/|resources/js/tinymce/plugins/template/|resources/js/tinymce/plugins/template/css/|resources/js/tinymce/plugins/template/js/|resources/js/tinymce/plugins/template/langs/|resources/js/tinymce/plugins/visualblocks/|resources/js/tinymce/plugins/visualblocks/css/|resources/js/tinymce/plugins/visualchars/|resources/js/tinymce/plugins/wordcount/|resources/js/tinymce/plugins/xhtmlxtras/|resources/js/tinymce/plugins/xhtmlxtras/css/|resources/js/tinymce/plugins/xhtmlxtras/js/|resources/js/tinymce/plugins/xhtmlxtras/langs/|resources/js/tinymce/themes/advanced/|resources/js/tinymce/themes/advanced/img/|resources/js/tinymce/themes/advanced/js/|resources/js/tinymce/themes/advanced/langs/|resources/js/tinymce/themes/advanced/skins/|resources/js/tinymce/themes/advanced/skins/highcontrast/|resources/js/tinymce/themes/advanced/skins/o2k7/|resources/js/tinymce/themes/advanced/skins/o2k7/img/|resources/js/tinymce/themes/advanced/skins/themepixels/|resources/js/tinymce/themes/advanced/skins/themepixels/img/|resources/js/tinymce/themes/simple/|resources/js/tinymce/themes/simple/img/|resources/js/tinymce/themes/simple/langs/|resources/js/tinymce/themes/simple/skins/|resources/js/tinymce/themes/simple/skins/o2k7/|resources/js/tinymce/themes/simple/skins/o2k7/img/|resources/js/tinymce/utils/" kind="src" path="src/main/webapp"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
