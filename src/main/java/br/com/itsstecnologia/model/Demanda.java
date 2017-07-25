@@ -19,7 +19,7 @@ public class Demanda {
 
 	@Id
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	@Column(name="nm_empresa")
 	private String empresa;
@@ -122,10 +122,6 @@ public class Demanda {
 		return sla;
 	}
 
-	public void setSla(Date sla) {
-		this.sla = sla;
-	}
-	
 	
 }
 	

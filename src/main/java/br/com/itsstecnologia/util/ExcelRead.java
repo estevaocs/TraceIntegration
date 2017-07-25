@@ -10,35 +10,29 @@ import jxl.Sheet;
 import jxl.read.biff.BiffException;
 
 public class ExcelRead {
-	
-	public Demanda create(Sheet sheet, int linha) throws IOException, BiffException {
+
+	public Demanda create(Sheet sheet, int linha) throws IOException, BiffException, ParseException {
 		Demanda demanda = null;
-		try {
 
-				Cell idCell = sheet.getCell("B" + linha);
-				Cell empresaCell = sheet.getCell("F" + linha);
-				Cell estadoCell = sheet.getCell("G" + linha);
-				Cell destinoCell = sheet.getCell("H" + linha);
-				Cell prioridadeCell = sheet.getCell("I" + linha);
-				Cell responsavelAtendimentoCell = sheet.getCell("S" + linha);
-				Cell dataHoraCriacaoCell = sheet.getCell("U" + linha);
-				
-				
-				demanda = new DemandaBuilder().instId(idCell.getContents())
-						.instEmpresa(empresaCell.getContents())
-						.instEstado(estadoCell.getContents())
-						.instDestino(destinoCell.getContents())
-						.instPrioridade(prioridadeCell.getContents())
-						.instRespAtend(responsavelAtendimentoCell.getContents())
-						.instData(dataHoraCriacaoCell.getContents()).builder();
+		Cell idCell = sheet.getCell("B" + linha);
+		Cell empresaCell = sheet.getCell("F" + linha);
+		Cell estadoCell = sheet.getCell("G" + linha);
+		Cell destinoCell = sheet.getCell("H" + linha);
+		Cell prioridadeCell = sheet.getCell("I" + linha);
+		Cell responsavelAtendimentoCell = sheet.getCell("S" + linha);
+		Cell dataHoraCriacaoCell = sheet.getCell("U" + linha);
 
-				
-		} catch (ParseException e) {
-			e.printStackTrace();
+		if (idCell.getContents().isEmpty() || idCell.getContents() != null
+				|| dataHoraCriacaoCell.getContents().isEmpty() || dataHoraCriacaoCell.getContents() != null) {
+			throw new RuntimeException("Planilha sem o id da tupla " + linha );
 		}
-		return demanda; 
+
+		demanda = new DemandaBuilder().instId(idCell.getContents()).instEmpresa(empresaCell.getContents())
+				.instEstado(estadoCell.getContents()).instDestino(destinoCell.getContents())
+				.instPrioridade(prioridadeCell.getContents()).instRespAtend(responsavelAtendimentoCell.getContents())
+				.instData(dataHoraCriacaoCell.getContents()).builder();
+
+		return demanda;
 	}
 
-	
-	
 }

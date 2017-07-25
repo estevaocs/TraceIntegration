@@ -35,7 +35,7 @@ public class DemandaDAO {
               return entityManager;
     }
 
-    public Demanda getById(final int id) {
+    public Demanda getById(final Long id) {
               return entityManager.find(Demanda.class, id);
     }
 
@@ -46,7 +46,7 @@ public class DemandaDAO {
 
     public void persist(Demanda demanda) {
               try {
-            	  if(entityManager.find(Demanda.class, (long) demanda.getId()) == null) {
+            	  if(getById(demanda.getId()) == null) {
                        entityManager.getTransaction().begin();
                        entityManager.persist(demanda);
                        entityManager.getTransaction().commit();
@@ -82,7 +82,7 @@ public class DemandaDAO {
               }
     }
 
-    public void removeById(final int id) {
+    public void removeById(final Long id) {
               try {
                        Demanda demanda = getById(id);
                        remove(demanda);
